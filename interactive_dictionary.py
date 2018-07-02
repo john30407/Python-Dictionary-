@@ -73,6 +73,7 @@ def translate(data, word):
 
 
 data = load_data("data.json")
+print("This is a work in progress. The function of this project is to get familiar with\nbasic Python library and syntax and practice using version \ncontrol Git with Github. Further developement aims to have a working database and GUI and web deployed")
 while True:
     word = input("\nWhat word would you like to know more of? (type 0 to exit):")
     if word == '0':
