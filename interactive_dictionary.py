@@ -7,15 +7,16 @@ from difflib import get_close_matches
 def load_data(filename):
     # input: name of the data file in str
     # output: data file in Python dictionary structure
+    # note: utilizes json lib to import the json file
 
     data = json.load(open(filename))
     return data
 
 
 def translate(data, word):
-    # input: Python dictionary being used in dict; word that wants to know the definition of in str
+    # input: Python dictionary data to be searched; word that wants to know the definition of in str
     # output: definition of the word in list
-    # note: considers small typos or capitalization, output optimized for better display
+    # note: considers small typos or capitalization errors, output optimized for better display
 
     if word in data:
         return data[word]
